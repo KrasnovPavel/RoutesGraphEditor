@@ -1,8 +1,8 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
-import QtQuick.Controls 2.5
-import QtQuick.Layouts 1.12
-import QtQuick.Dialogs 1.3
+import QtQuick 2.0
+import QtQuick.Window 2.0
+import QtQuick.Controls 2.3
+import QtQuick.Layouts 1.0
+import QtQuick.Dialogs 1.0
 
 Window {
     visible: true
@@ -17,7 +17,7 @@ Window {
         folder: shortcuts.home
         nameFilters: [ "Image files (*.jpg *.png)", "All files (*)" ]
 
-        onAccepted: mainImage.source = fileDialog.fileUrl
+        onAccepted: mainImage.source = openImageDialog.fileUrl
     }
 
     FileDialog {
